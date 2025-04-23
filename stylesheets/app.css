@@ -1,8 +1,8 @@
 body {
-	background: linear-gradient(-30deg, #5a0000, #800265, #065096, #0030b6);
+	background: linear-gradient(-45deg, #5a0000, #800265, #065096, #0030b6);
 	background-size: 200% 200%;
-	animation: gradient 20s ease infinite;
-	height: 100vh;
+	animation: gradient 45s ease infinite;
+	height: 110vh;
 }
 
 @font-face {
@@ -132,8 +132,8 @@ body {
 }
 
 .link-icon {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
 }
 
@@ -142,7 +142,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 16px;
+  padding: 12px;
   margin: 12px 0;
   border: 4px solid rgb(0, 0, 0);
   border-radius: 12px;
@@ -183,6 +183,10 @@ body {
 
 .kofi-color {
   background-color: rgb(3, 31, 66);
+}
+
+.email-color {
+  background-color: rgb(44, 53, 63);
 }
 
 .line-taper {
