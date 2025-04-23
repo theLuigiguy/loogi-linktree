@@ -36,22 +36,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  
-  <!-- Scripts -->
-  <!-- Hitcounter -->
-  <script data-goatcounter="https://theluigiguy.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script>
-      var t = setInterval(function() {
-          if (window.goatcounter && window.goatcounter.visit_count) {
-              clearInterval(t)
-              window.goatcounter.visit_count({append: 'body'})
-          }
-      }, 100)
-  </script>
-  <script>
-    // Append to the <body>; can use a CSS selector to append somewhere else.
-    window.goatcounter.visit_count({append: 'body'})
-  </script>
 
   <!-- Local stylesheets -->
   <link rel="stylesheet" href="stylesheets/app.css">
@@ -115,6 +99,29 @@
 
   <div class="extra-space"> 
     <hr class="line-taper">
+  </div>
+
+  <div class="hit-counter-container">
+    <div id="hit-counter">
+      <script data-goatcounter="https://theluigiguy.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+      <script>
+          var t = setInterval(function() {
+              if (window.goatcounter && window.goatcounter.visit_count) {
+                  clearInterval(t)
+                  window.goatcounter.visit_count({
+                    append: '#hit-counter',
+                    style: `
+                      div {
+                        border-color: #000;
+                        background-color: #222;
+                        color: #fff;
+                      }
+                    `
+                  })
+              }
+          }, 100)
+      </script>
+    </div>
   </div>
 
   <footer class="page-footer">

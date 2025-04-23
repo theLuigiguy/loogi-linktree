@@ -1,6 +1,6 @@
 body {
 	background: linear-gradient(-45deg, #5a0000, #800265, #065096, #0030b6);
-	background-size: 200% 200%;
+	background-size: 200% 400%;
 	animation: gradient 45s ease infinite;
 	height: 110vh;
 }
@@ -204,6 +204,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: white;
+}
+
+.hit-counter-container {
+  margin: 0 auto;
+  text-align: center;
+  color: white
 }
 
 .extra-space {
