@@ -132,10 +132,10 @@
 
   <script>
     const image = document.getElementById('peeky-duck');
-    const sound = document.getElementById('quack');
+    const sound = document.getElementById('quack').src;
     image.addEventListener('click', () => {
-      sound.currentTime = 0;
-      sound.play();
+      const sfxInstance = new Audio(sound);
+      sfxInstance.play();
     });
   </script>
 </body>
