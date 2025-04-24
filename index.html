@@ -42,9 +42,11 @@
 </head>
 
 <body>
+  <img src="images/duck8x.png" class="peeking-duck" id="peeky-duck" alt="A pixel yellow duck with its right wing up like it's waving">
+  <audio id="quack" src="sfx/Quack.mp3" preload="auto"></audio>
   <div class="title-container"> 
     <div class="title-loogi img-tweak-flipped-rotated">
-      <img src="images/csRun.gif" alt="Image of theLuigiguy running">
+      <img src="images/csRun.gif" alt="GIF of theLuigiguy running">
     </div>
     <div class="title-text">
       <div class="text-fill">Loogi's Links!</div>   
@@ -127,4 +129,13 @@
   <footer class="page-footer">
     &copy; 2025 theLuigiguy
   </footer>
+
+  <script>
+    const image = document.getElementById('peeky-duck');
+    const sound = document.getElementById('quack');
+    image.addEventListener('click', () => {
+      sound.currentTime = 0;
+      sound.play();
+    });
+  </script>
 </body>
